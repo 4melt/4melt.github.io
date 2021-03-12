@@ -15,14 +15,15 @@ body {
 
 #placeholder {
     width: 95%;
-    height: 350px;
 }
 
 #main {
-    width: 100%;
+    width: auto;
     height: auto;
+    font-size: 170%;
     margin: 0 auto;
     text-align: center;
+    margin-top: 20%;
 }
 
 .slider-wrapper {
@@ -51,10 +52,10 @@ body {
 }
 
 .slider-text1 {
-    animation: slide 6s linear infinite;
+    animation: slide1 6s linear infinite;
 }
 
-@keyframes slide {
+@keyframes slide1 {
     0% {
         margin-top: -300px;
     }
