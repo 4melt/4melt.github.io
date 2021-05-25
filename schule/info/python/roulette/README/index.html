@@ -1,0 +1,160 @@
+<head>
+  <title>Roulette by Johannes Olzem</title>
+</head>
+<body>
+<h1 id="roulette-by-johannes-olzem-documentation">Roulette by Johannes Olzem - Documentation</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Roulette is a casino Game that appeared first in 1720 in the form of the Italian game Biribi.</p>
+<h2 id="installation">Installation</h2>
+<ol>
+<li>Download Python 3.9 <a href="https://www.python.org/downloads/">here</a>.</li>
+<li>Download the Source Code</li>
+<li>Insert the path to your roulette.py file in Line 24 inside the apostrophes</li>
+<li>If it is not already there, create a balance.txt file with the value 10.0</li>
+</ol>
+<h2 id="usage">Usage</h2>
+<p>Have fun gambling <strong>without</strong> real money.</p>
+<h2 id="code-explanation">Code Explanation</h2>
+<hr>
+<h3 id="imports-and-lists">Imports and Lists</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> random
+<span class="hljs-keyword">import</span> <span class="hljs-built_in">time</span>
+<span class="hljs-keyword">import</span> os
+</code></pre>
+<p>Importing built-in python modules for later use.</p>
+<hr>
+<pre><code class="lang-python">r = str([<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, ...])
+... = str([...])
+</code></pre>
+<p>Lists defining the Roulette Fields for betting and payout, also being converted to strings.</p>
+<hr>
+<h3 id="introduction-to-the-game">Introduction to the Game</h3>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">"Roulette by Johannes Olzem\nDocumentation at https://johannesolzem.gq/schule/info/python/roulette/README.md"</span>)</span></span>
+<span class="hljs-selector-tag">time</span>.sleep(<span class="hljs-number">0.5</span>)
+<span class="hljs-keyword">for</span> <span class="hljs-selector-tag">i</span> <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+    print(<span class="hljs-string">".\n"</span>)
+</code></pre>
+<p>The title section. This prints the text in the Quotation marks, then waits 0.5 seconds (with help of the time module). Afterwards it prints a dot and a line break 3 times with help of a for loop.</p>
+<hr>
+<pre><code class="lang-python"><span class="hljs-attr">startGame</span> = input(<span class="hljs-string">"Would you like to play roulette? (yes/no)\n"</span>)
+</code></pre>
+<p>The Variable startGame asks the user for an input, whether he would like to start the game or not.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> startGame == <span class="hljs-string">'no'</span>:
+    <span class="hljs-keyword">exit</span>()
+</code></pre>
+<p>If the user input of the Variable startGame is &quot;no&quot;, the program exits.</p>
+<pre><code class="lang-python">elif startGame == <span class="hljs-string">'yes'</span>:
+    ...
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-keyword">exit</span>()
+</code></pre>
+<p>Else, if the user input of the Variable startGame is &quot;yes&quot;, the code inside the tab spacing gets executed. If the input is anything else, the program exits.</p>
+<hr>
+<pre><code class="lang-python">os.chdir(<span class="hljs-string">r'C:\Users\Johannes\Documents\py\roulette'</span>)
+</code></pre>
+<p>The program gets directed to the path given, with help of the os module.</p>
+<hr>
+<pre><code class="lang-python"><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">'balance.txt'</span>, <span class="hljs-string">'r'</span>) <span class="hljs-keyword">as</span> balance:
+    coinbal = float(balance.<span class="hljs-built_in">read</span>())
+</code></pre>
+<p>Opens the file balance.txt with read access as a variable &quot;balance&quot;. Inside that, the Variable coinbal gets defined. It&#39;s supposed to read the file balance(.txt) and convert it into a float (also called floating number).</p>
+<hr>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">"\nreview payout here"</span>)</span></span>
+<span class="hljs-function"><span class="hljs-title">print</span><span class="hljs-params">(<span class="hljs-string">"https://johannesolzem.gq/schule/info/python/roulette/werte.png \n"</span>)</span></span>
+</code></pre>
+<p>A Link to the payout table.</p>
+<hr>
+<h3 id="betting">Betting</h3>
+<pre><code class="lang-python">betcoi = float(<span class="hljs-name">input</span>(<span class="hljs-string">"How many coins would you like to bet\n"</span>))
+</code></pre>
+<p>The Variable betcoi asks the user for an input and converts it into a float.</p>
+<hr>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> betcoi &gt; coinbal:
+    print(<span class="hljs-string">"You don't have enough coins!"</span>)
+    <span class="hljs-keyword">exit</span>()
+</code></pre>
+<p>If the amount the user is trying to bet exceeds his balance, the program prints &quot;You don&#39;t have enough coins!&quot; and then exits.</p>
+<hr>
+<pre><code class="lang-python"><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">'balance.txt'</span>, <span class="hljs-string">'w'</span>) <span class="hljs-keyword">as</span> useCoins:
+    useCoins.<span class="hljs-built_in">write</span>(str(coinbal - betcoi))
+</code></pre>
+<p>The file balance.txt gets opened again (now with write access), as the Variable useCoins. Inside this, the file gets overwritten with the subtraction of the balance (coinbal) and the bet (betcoi). The solution of that gets converted into a string.</p>
+<hr>
+<pre><code class="lang-python"><span class="hljs-attr">coinbal</span> = coinbal - betcoi
+</code></pre>
+<p>The variable coinbal is now the subtraction of the users balance and the bet.</p>
+<hr>
+<pre><code class="lang-python">betnum = input(<span class="hljs-string">"<span class="hljs-subst">\n</span>What would you like to bet on?<span class="hljs-subst">\n</span><span class="hljs-subst">\n</span>0-36<span class="hljs-subst">\n</span>even/odd<span class="hljs-subst">\n</span>red/black<span class="hljs-subst">\n</span>1st/2nd/3rd<span class="hljs-subst">\n</span>half1/half2<span class="hljs-subst">\n</span><span class="hljs-subst">\n</span>"</span>)
+</code></pre>
+<p>The Variable betnum asks the user for an input. This input decides whether the user wins or not after the &quot;wheel&quot; has landed. It also prints out the possible bets.</p>
+<hr>
+<h3 id="wheel">Wheel</h3>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">wheel</span><span class="hljs-params">(spinTimes)</span></span><span class="hljs-symbol">:</span>
+</code></pre>
+<p>The function wheel with the parameter spinTimes gets defined.</p>
+<pre><code class="lang-python">winnum = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> <span class="hljs-selector-tag">i</span> <span class="hljs-keyword">in</span> range(spinTimes):
+    winnum = winnum + <span class="hljs-number">1</span>
+    print(winnum)
+    <span class="hljs-selector-tag">time</span>.sleep(<span class="hljs-number">0.1</span>)
+    <span class="hljs-keyword">if</span> winnum == <span class="hljs-number">36</span>:
+    winnum = <span class="hljs-number">0</span>
+</code></pre>
+<p>First the winning number gets set to 0. Then the for loop adds 1 every repeat, prints it and waits 0.1 seconds. If the Winning number goes above 36 it gets reset to 0.</p>
+<pre><code class="lang-Python">    <span class="hljs-built_in">time</span>.<span class="hljs-built_in">sleep</span>(<span class="hljs-number">0.3</span>)
+    winnum = winnum + <span class="hljs-number">1</span>
+    <span class="hljs-keyword">print</span>(winnum)
+    <span class="hljs-built_in">time</span>.<span class="hljs-built_in">sleep</span>(<span class="hljs-number">0.4</span>)
+    winnum = winnum + <span class="hljs-number">1</span>
+    <span class="hljs-keyword">print</span>(winnum)
+    <span class="hljs-built_in">time</span>.<span class="hljs-built_in">sleep</span>(<span class="hljs-number">0.7</span>)
+    winnum = winnum + <span class="hljs-number">1</span>
+    <span class="hljs-keyword">print</span>(winnum)
+</code></pre>
+<p>This scheme continues, but with increasing time between the printing, to show that the wheel is slowing down.</p>
+<pre><code class="lang-Python"><span class="hljs-function"><span class="hljs-title">return</span><span class="hljs-params">(winnum)</span></span>
+</code></pre>
+<p>The winning number gets returned for later use.</p>
+<hr>
+<pre><code class="lang-Python">winnum = float(<span class="hljs-name">wheel</span>(<span class="hljs-name">random</span>.randrange(<span class="hljs-number">26</span>,<span class="hljs-number">74</span>)))
+</code></pre>
+<p>The Variable winnum gets defined outside the &quot;wheel&quot;. The function wheel gets executed with a spinTimes value of random.randrange(26,74), which returns a number between 26 and 74.</p>
+<hr>
+<h3 id="payout">Payout</h3>
+<pre><code class="lang-Python"><span class="hljs-keyword">if</span> <span class="hljs-attr">betnum</span> == winnum:
+    print(<span class="hljs-string">"Congratulations! You won 5x your Coins!"</span>)
+    <span class="hljs-attr">win</span> = betcoi * <span class="hljs-number">5</span>
+</code></pre>
+<p>If the bet is equal to the winning number, the variable win equals the bet times 5.</p>
+<pre><code class="lang-Python"><span class="hljs-symbol">elif</span> <span class="hljs-keyword">betnum </span>== <span class="hljs-string">"even"</span> <span class="hljs-keyword">and </span>(winnum % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>):
+    print(<span class="hljs-string">"Congratulations! You won 2x your Coins!"</span>)
+    win = <span class="hljs-keyword">betcoi </span>* <span class="hljs-number">2</span>
+
+<span class="hljs-symbol">elif</span> <span class="hljs-keyword">betnum </span>== <span class="hljs-string">"odd"</span> <span class="hljs-keyword">and </span>(winnum % <span class="hljs-number">2</span> != <span class="hljs-number">0</span>):
+    print(<span class="hljs-string">"Congratulations! You won 2x your Coins!"</span>)
+    win = <span class="hljs-keyword">betcoi </span>* <span class="hljs-number">2</span>
+</code></pre>
+<p>If the bet is even/odd and the winning number divided by 2 does/doesnt equal 0, the user wins his bet times 2.</p>
+<pre><code class="lang-Python">elif <span class="hljs-attr">betnum</span> == <span class="hljs-string">"red"</span> <span class="hljs-literal">and</span> winnum <span class="hljs-keyword">in</span> r:
+    print(<span class="hljs-string">"Congratulations! You won 2x your Coins!"</span>)
+    <span class="hljs-attr">win</span> = betcoi * <span class="hljs-number">2</span>
+</code></pre>
+<p>If the bet is &quot;red&quot; and the winning number can be found in the list &quot;r&quot; (line 5), the user wins his bet times 2.\
+This is the same for the other elif statements.</p>
+<pre><code class="lang-Python"><span class="hljs-keyword">else</span>:
+    <span class="hljs-keyword">print</span>(<span class="hljs-string">"Oh no, you lost!"</span>)
+    <span class="hljs-keyword">win</span> = 0
+</code></pre>
+<p>If none of the above apply, the user wins nothing.</p>
+<hr>
+<pre><code class="lang-Python"><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">'balance.txt'</span>, <span class="hljs-string">'w'</span>) <span class="hljs-keyword">as</span> payout:
+    payout.<span class="hljs-built_in">write</span>(str(coinbal + win))
+</code></pre>
+<p>The file balance.txt gets opened once again, with write access. It overwrites the data of the file with the sum of the users balance and win, which gets converted into a string.</p>
+<hr>
+<h3 id="end">End</h3>
+<pre><code class="lang-Python">time.sleep(<span class="hljs-number">1</span>)
+<span class="hljs-keyword">exit</span>()
+</code></pre>
+<p>The program waits for 1 second before closing, to show the winnings to the user</p>
+</body>
