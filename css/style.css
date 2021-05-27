@@ -6,24 +6,21 @@ body {
     background: #000000 url(bg.jpg) no-repeat fixed center center;
 }
 
-#wrap {
-    width: 95%;
-    height: auto;
+#parent {
+    width: 99%;
     margin: 0 auto;
     text-align: center;
-}
-
-#placeholder {
-    width: 95%;
+    position: relative;
 }
 
 #main {
     width: auto;
     height: auto;
     font-size: 170%;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 20%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
 }
 
 .slider-wrapper {
