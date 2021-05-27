@@ -14,7 +14,7 @@ body {
 }
 
 #main {
-    width: 100%;
+    width: auto;
     height: auto;
     font-size: 170%;
     text-align: center;
