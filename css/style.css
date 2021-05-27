@@ -59,28 +59,41 @@ body {
     }
 
     5% {
+        margin-top: -300px;
+    }
+
+    25% {
+        margin-top: -300px;
+    }
+
+    30% {
         margin-top: -200px;
     }
 
-    33% {
+    50% {
         margin-top: -200px;
     }
 
-    38% {
+    55% {
         margin-top: -100px;
     }
 
-    66% {
+    75% {
         margin-top: -100px;
     }
 
-    71% {
+    80% {
+        margin-top: 0px;
+    }
+
+    95% {
         margin-top: 0px;
     }
 
     100% {
-        margin-top: 0px;
+        margin-top: -300px;
     }
+
 }
 
 h1, h2, h3, h4, h5, h6 {
