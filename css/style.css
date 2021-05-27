@@ -1,6 +1,6 @@
 body {
     font-size: 100%;
-    font-family: 'Ruda', sans-serif;
+    font-family: 'Syne', sans-serif;
     text-align: center;
     color: #cce6ff;
     background: #000000 url(bg.jpg) no-repeat fixed center center;
@@ -84,20 +84,20 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 20px;
-    font-family: 'Ruda', sans-serif;
+    font-family: 'Syne', sans-serif;
     text-align: center;
 }
 
 p {
     font-size: 15px;
     margin: 25px 30px;
-    color: white;
-    font-family: 'Ruda', sans-serif;
+    color: #fff;
+    font-family: 'Syne', sans-serif;
     text-align: center;
 }
 
 a {
-    font-family: 'Ruda', sans-serif;
+    font-family: 'Syne', sans-serif;
     text-align: center;
     color: #0073e6;
     font-size: 15px;
