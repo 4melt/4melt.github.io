@@ -1,0 +1,173 @@
+//CLEAR
+	unbindall
+	
+//MOUSE
+ 
+    sensitivity "1.5"
+ 
+    bind "MOUSE1" "+attack"
+    bind "MOUSE2" "+attack2"
+ 
+    bind mwheeldown "+jump"
+    bind mwheelup "+jump"
+ 
+    m_rawinput "1"
+    m_mousespeed "0"
+    m_customaccel "0"
+ 
+    bind "k" "say_team"
+    voice_loopback 0
+ 
+//KEYBOARD
+ 
+    //DIRECTIONAL
+ 
+        bind "w" "+forward; r_cleardecals"
+        bind "s" "+back; r_cleardecals"
+        bind "a" "+moveleft; r_cleardecals"
+        bind "d" "+moveright; r_cleardecals"
+        bind "shift" "+duck;+low"
+        bind "ctrl" "+speed;+slow"
+ 
+    //INTERACT/SELECT
+ 
+    bind "r" "+reload"
+		bind "e" "+use;+lever"
+		bind "g" "drop;+switch"
+		bind "q" "lastinv;+flip"
+		bind "1" "slot1;+low"
+		bind "2" "slot2;+switch"
+		bind "3" "slot3;+switch"
+		bind "4" "slot4;+lever"
+		bind "5" "slot5"
+		bind "t" "+lookatweapon;+swipe"
+		bind "x" "slot12"
+		bind "h" "player_ping"
+		bind "F3" "autobuy"
+		bind "z" "+spray_menu"
+		bind "=" "toggleconsole;"
+		
+//VIEWMODEL
+ 
+    viewmodel_offset_x 2
+    viewmodel_offset_y 5
+    viewmodel_offset_z -3
+    viewmodel_fov 68
+    cl_righthand 1
+    cl_bobcycle 1
+    cl_bobamt_vert 0
+    cl_bob_lower_amt 0
+    cl_bobamt_lat 0
+	cl_showfps 1
+ 
+//CROSSHAIR
+ 
+    cl_crosshairsize 3; 
+	cl_crosshairgap -1; 
+	cl_crosshairthickness 0.4; 
+	cl_crosshaircolor 5; 
+	cl_crosshaircolor_b 144; 
+	cl_crosshaircolor_g 195; 
+	cl_crosshaircolor_r 27; 
+	cl_crosshairdot 1; 
+	cl_crosshairstyle 5; 
+	cl_crosshairalpha 250; 
+	cl_crosshairgap_useweaponvalue 0; 
+	cl_crosshairusealpha 1; 
+	cl_crosshair_drawoutline 0; 
+	cl_crosshair_dynamic_maxdist_splitratio 0.35; 
+	cl_crosshair_dynamic_splitalpha_innermod 1; 
+	cl_crosshair_dynamic_splitalpha_outermod 0.5; 
+	cl_crosshair_dynamic_splitdist 7;
+
+//HUD
+ 
+    cl_use_opens_buy_menu 0
+    cl_showloadout 1
+    sv_steamgroup 0
+	cl_hud_radar_scale "0.9"
+	cl_radar_scale "0.4"
+	cl_radar_always_centered "0"
+
+//ALIASES
+ 
+    //HELPFUL
+ 
+    //SILENCE IN DM
+    alias dm  "ignorerad; ignoremsg; voice_enable 0"
+ 
+    //EASY DISCONNECT
+    alias dc  "disconnect"
+ 
+    //SCOREGRAPH
+    bind "tab" "+_scoregraph;+graphSound"
+ 
+    alias "+_scoregraph" "+showscores; net_graphheight 0;"
+    alias "-_scoregraph" "-showscores; net_graphheight 2000;"
+	alias "+graphSound" "playvol buttons/combine_button7 .7"
+
+    bind x "use weapon_healthshot"
+	bind z "playvol buttons/combine_button7 .7"
+ 
+//SOUND
+ 
+	snd_mvp_volume .4
+	
+	//CUSTOM SOUNDS
+	alias +skeet "playvol buttons/blip1 .3;+attack"
+    alias -skeet "-attack"
+    bind "mouse1" "+skeet"
+	
+	alias +lever "playvol buttons/button17 .2"
+	
+	alias +switch "playvol buttons/button18 .4"
+	
+	alias +slow "playvol buttons/lever7 .1"
+	
+	alias +low "playvol buttons/combine_button2 .1"
+	
+	alias +flip "playvol buttons/combine_button1 .2"
+	
+	alias +swipe "playvol buttons/button9 .1"
+ 
+    //VOICE
+ 
+        voice_enable       "1"
+        volume             ".7"
+        voice_scale        ".6"
+ 
+	voice_enable "1"
+	snd_tensecondwarning_volume "0.5"
+	snd_menumusic_volume "0"
+	snd_roundend_volume "0.5"
+	snd_roundstart_volume "0"
+	snd_deathcamera_volume "0"
+	snd_mapobjective_volume "0"
+	snd_roundstart_volume 0
+ 	snd_roundend_volume 0
+	snd_deathcamera_volume 0
+ 
+//BUY (GERMAN LAYOUT / CUSTOMIZE TO YOUR LIKING)
+ 
+  bind "space" "buymenu;+lever"
+	bind "i" "buy hegrenade;+lever"
+	bind "o" "buy flashbang;+lever"
+	bind "p" "buy smokegrenade;+lever"
+	bind "-" "buy awp;+lever"
+	bind "," "buy ak47;+lever"
+	bind "." "buy deagle;+lever"
+	bind "n" "buy bizon;+lever"
+	bind "m" "buy mp7;+lever"
+	bind "v" "buy vesthelm;+lever"
+	bind "u" "buy defuser;+lever"
+	bind "b" "buy vest;+lever"
+	bind "SEMICOLON" "buy molotov;+lever"
+	bind "'" "buy mp9;+lever"
+	bind "\" "buy negev;+lever"
+
+
+joystick 0
+mm_dedicated_search_maxping 200
+cl_autowepswitch 0
+fps_max 0
+host_writeconfig
