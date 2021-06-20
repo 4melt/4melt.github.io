@@ -1,289 +1,167 @@
-<!DOCTYPE HTML>
-<HTML>
-<HEAD>
-	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
-	<TITLE>Autoexec</TITLE>
-	<STYLE TYPE="text/css">
-	<!--
-		@page { margin: 0.79in }
-		P { margin-bottom: 0.08in }
-		A:link { so-language: zxx }
-	-->
-	</STYLE>
-</HEAD>
-<BODY LANG="en-US" DIR="LTR">
-<P STYLE="margin-bottom: 0in">//CLEAR</P>
-<P STYLE="margin-bottom: 0in">	unbindall</P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P STYLE="margin-bottom: 0in">	</P>
-<P STYLE="margin-bottom: 0in">//MOUSE</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">    sensitivity &quot;1.5&quot;</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">    bind &quot;MOUSE1&quot; &quot;+attack&quot;</P>
-<P STYLE="margin-bottom: 0in">    bind &quot;MOUSE2&quot; &quot;+attack2&quot;</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">    bind mwheeldown &quot;+jump&quot;</P>
-<P STYLE="margin-bottom: 0in">    bind mwheelup &quot;+jump&quot;</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">    m_rawinput &quot;1&quot;</P>
-<P STYLE="margin-bottom: 0in">    m_mousespeed &quot;0&quot;</P>
-<P STYLE="margin-bottom: 0in">    m_customaccel &quot;0&quot;</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">    bind &quot;k&quot; &quot;say_team&quot;</P>
-<P STYLE="margin-bottom: 0in">    voice_loopback 0</P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P STYLE="margin-bottom: 0in">//KEYBOARD</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">    //DIRECTIONAL</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">        bind &quot;w&quot; &quot;+forward;
-r_cleardecals&quot;</P>
-<P STYLE="margin-bottom: 0in">        bind &quot;s&quot; &quot;+back;
-r_cleardecals&quot;</P>
-<P STYLE="margin-bottom: 0in">        bind &quot;a&quot; &quot;+moveleft;
-r_cleardecals&quot;</P>
-<P STYLE="margin-bottom: 0in">        bind &quot;d&quot; &quot;+moveright;
-r_cleardecals&quot;</P>
-<P STYLE="margin-bottom: 0in">        bind &quot;shift&quot;
-&quot;+duck;+low&quot;</P>
-<P STYLE="margin-bottom: 0in">        bind &quot;ctrl&quot;
-&quot;+speed;+slow&quot;</P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P STYLE="margin-bottom: 0in">    //INTERACT/SELECT</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">        bind &quot;r&quot; &quot;+reload&quot;</P>
-<P STYLE="margin-bottom: 0in">		bind &quot;e&quot; &quot;+use;+lever&quot;</P>
-<P STYLE="margin-bottom: 0in">		bind &quot;g&quot; &quot;drop;+switch&quot;</P>
-<P STYLE="margin-bottom: 0in">		bind &quot;q&quot; &quot;lastinv;+flip&quot;</P>
-<P STYLE="margin-bottom: 0in">		bind &quot;1&quot; &quot;slot1;+low&quot;</P>
-<P STYLE="margin-bottom: 0in">		bind &quot;2&quot; &quot;slot2;+switch&quot;</P>
-<P STYLE="margin-bottom: 0in">		bind &quot;3&quot; &quot;slot3;+switch&quot;</P>
-<P STYLE="margin-bottom: 0in">		bind &quot;4&quot; &quot;slot4;+lever&quot;</P>
-<P STYLE="margin-bottom: 0in">		bind &quot;5&quot; &quot;slot5&quot;</P>
-<P STYLE="margin-bottom: 0in">		bind &quot;t&quot;
-&quot;+lookatweapon;+swipe&quot;</P>
-<P STYLE="margin-bottom: 0in">		bind &quot;x&quot; &quot;slot12&quot;</P>
-<P STYLE="margin-bottom: 0in">		bind &quot;h&quot; &quot;player_ping&quot;</P>
-<P STYLE="margin-bottom: 0in">		bind &quot;F3&quot; &quot;autobuy&quot;</P>
-<P STYLE="margin-bottom: 0in">		bind &quot;z&quot; &quot;+spray_menu&quot;</P>
-<P STYLE="margin-bottom: 0in">		bind &quot;=&quot; &quot;toggleconsole;&quot;</P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P STYLE="margin-bottom: 0in">	</P>
-<P STYLE="margin-bottom: 0in">//VIEWMODEL</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">    viewmodel_offset_x 2</P>
-<P STYLE="margin-bottom: 0in">    viewmodel_offset_y 5</P>
-<P STYLE="margin-bottom: 0in">    viewmodel_offset_z -3</P>
-<P STYLE="margin-bottom: 0in">    viewmodel_fov 68</P>
-<P STYLE="margin-bottom: 0in">    cl_righthand 1</P>
-<P STYLE="margin-bottom: 0in">    cl_bobcycle 1</P>
-<P STYLE="margin-bottom: 0in">    cl_bobamt_vert 0</P>
-<P STYLE="margin-bottom: 0in">    cl_bob_lower_amt 0</P>
-<P STYLE="margin-bottom: 0in">    cl_bobamt_lat 0</P>
-<P STYLE="margin-bottom: 0in">	cl_showfps 1</P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P STYLE="margin-bottom: 0in">//CROSSHAIR</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">    cl_crosshairsize 3; 
-</P>
-<P STYLE="margin-bottom: 0in">	cl_crosshairgap -1; 
-</P>
-<P STYLE="margin-bottom: 0in">	cl_crosshairthickness 0.4; 
-</P>
-<P STYLE="margin-bottom: 0in">	cl_crosshaircolor 5; 
-</P>
-<P STYLE="margin-bottom: 0in">	cl_crosshaircolor_b 144; 
-</P>
-<P STYLE="margin-bottom: 0in">	cl_crosshaircolor_g 195; 
-</P>
-<P STYLE="margin-bottom: 0in">	cl_crosshaircolor_r 27; 
-</P>
-<P STYLE="margin-bottom: 0in">	cl_crosshairdot 1; 
-</P>
-<P STYLE="margin-bottom: 0in">	cl_crosshairstyle 5; 
-</P>
-<P STYLE="margin-bottom: 0in">	cl_crosshairalpha 250; 
-</P>
-<P STYLE="margin-bottom: 0in">	cl_crosshairgap_useweaponvalue 0; 
-</P>
-<P STYLE="margin-bottom: 0in">	cl_crosshairusealpha 1; 
-</P>
-<P STYLE="margin-bottom: 0in">	cl_crosshair_drawoutline 0; 
-</P>
-<P STYLE="margin-bottom: 0in">	cl_crosshair_dynamic_maxdist_splitratio
-0.35; 
-</P>
-<P STYLE="margin-bottom: 0in">	cl_crosshair_dynamic_splitalpha_innermod
-1; 
-</P>
-<P STYLE="margin-bottom: 0in">	cl_crosshair_dynamic_splitalpha_outermod
-0.5; 
-</P>
-<P STYLE="margin-bottom: 0in">	cl_crosshair_dynamic_splitdist 7;</P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P STYLE="margin-bottom: 0in">//HUD</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">    cl_use_opens_buy_menu 0</P>
-<P STYLE="margin-bottom: 0in">    cl_showloadout 1</P>
-<P STYLE="margin-bottom: 0in">    sv_steamgroup 0</P>
-<P STYLE="margin-bottom: 0in">	cl_hud_radar_scale &quot;0.9&quot;</P>
-<P STYLE="margin-bottom: 0in">	cl_radar_scale &quot;0.4&quot;</P>
-<P STYLE="margin-bottom: 0in">	cl_radar_always_centered &quot;0&quot;</P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P STYLE="margin-bottom: 0in">//ALIASES</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">    //HELPFUL</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">    //SILENCE IN DM</P>
-<P STYLE="margin-bottom: 0in">    alias dm  &quot;ignorerad;
-ignoremsg; voice_enable 0&quot;</P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P STYLE="margin-bottom: 0in">    //EASY DISCONNECT</P>
-<P STYLE="margin-bottom: 0in">    alias dc  &quot;disconnect&quot;</P>
-<P STYLE="margin-bottom: 0in">	</P>
-<P STYLE="margin-bottom: 0in">	//DISCONNECT TYPO</P>
-<P STYLE="margin-bottom: 0in">	alias cd  &quot;disconnect&quot;</P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">//SCOREGRAPH</P>
-<P STYLE="margin-bottom: 0in">    bind &quot;tab&quot;
-&quot;+_scoregraph;+graphSound&quot;</P>
-<P STYLE="margin-bottom: 0in">    alias &quot;+_scoregraph&quot;
-&quot;+showscores; net_graphheight 0;&quot;</P>
-<P STYLE="margin-bottom: 0in">    alias &quot;-_scoregraph&quot;
-&quot;-showscores; net_graphheight 2000;&quot;</P>
-<P STYLE="margin-bottom: 0in">	alias &quot;+graphSound&quot; &quot;playvol
-buttons/combine_button7 .7&quot;</P>
-<P STYLE="margin-bottom: 0in">    bind x &quot;use weapon_healthshot&quot;</P>
-<P STYLE="margin-bottom: 0in">	bind z &quot;playvol
-buttons/combine_button7 .7&quot;</P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P STYLE="margin-bottom: 0in">//SOUND</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">	snd_mvp_volume .4</P>
-<P STYLE="margin-bottom: 0in">	</P>
-<P STYLE="margin-bottom: 0in">	//CUSTOM SOUNDS</P>
-<P STYLE="margin-bottom: 0in">	alias +skeet &quot;playvol
-buttons/blip1 .3;+attack&quot;</P>
-<P STYLE="margin-bottom: 0in">    alias -skeet &quot;-attack&quot;</P>
-<P STYLE="margin-bottom: 0in">    bind &quot;mouse1&quot; &quot;+skeet&quot;</P>
-<P STYLE="margin-bottom: 0in">	</P>
-<P STYLE="margin-bottom: 0in">	alias +lever &quot;playvol
-buttons/button17 .2&quot;</P>
-<P STYLE="margin-bottom: 0in">	</P>
-<P STYLE="margin-bottom: 0in">	alias +switch &quot;playvol
-buttons/button18 .4&quot;</P>
-<P STYLE="margin-bottom: 0in">	</P>
-<P STYLE="margin-bottom: 0in">	alias +slow &quot;playvol
-buttons/lever7 .1&quot;</P>
-<P STYLE="margin-bottom: 0in">	</P>
-<P STYLE="margin-bottom: 0in">	alias +low &quot;playvol
-buttons/combine_button2 .1&quot;</P>
-<P STYLE="margin-bottom: 0in">	</P>
-<P STYLE="margin-bottom: 0in">	alias +flip &quot;playvol
-buttons/combine_button1 .2&quot;</P>
-<P STYLE="margin-bottom: 0in">	</P>
-<P STYLE="margin-bottom: 0in">	alias +swipe &quot;playvol
-buttons/button9 .1&quot;</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P STYLE="margin-bottom: 0in">    //VOICE</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">        voice_enable       &quot;1&quot;</P>
-<P STYLE="margin-bottom: 0in">        volume             &quot;.7&quot;</P>
-<P STYLE="margin-bottom: 0in">        voice_scale        &quot;.6&quot;</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">	voice_enable &quot;1&quot;</P>
-<P STYLE="margin-bottom: 0in">	snd_tensecondwarning_volume &quot;0.5&quot;</P>
-<P STYLE="margin-bottom: 0in">	snd_menumusic_volume &quot;0&quot;</P>
-<P STYLE="margin-bottom: 0in">	snd_roundend_volume &quot;0.5&quot;</P>
-<P STYLE="margin-bottom: 0in">	snd_roundstart_volume &quot;0&quot;</P>
-<P STYLE="margin-bottom: 0in">	snd_deathcamera_volume &quot;0&quot;</P>
-<P STYLE="margin-bottom: 0in">	snd_mapobjective_volume &quot;0&quot;</P>
-<P STYLE="margin-bottom: 0in">	snd_roundstart_volume 0</P>
-<P STYLE="margin-bottom: 0in"> 	snd_roundend_volume 0</P>
-<P STYLE="margin-bottom: 0in">	snd_deathcamera_volume 0</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P STYLE="margin-bottom: 0in">//BUY</P>
-<P STYLE="margin-bottom: 0in"> 
-</P>
-<P STYLE="margin-bottom: 0in">    bind &quot;space&quot;
-&quot;buymenu;+lever&quot;</P>
-<P STYLE="margin-bottom: 0in">	bind &quot;i&quot; &quot;buy
-hegrenade;+lever&quot;</P>
-<P STYLE="margin-bottom: 0in">	bind &quot;o&quot; &quot;buy
-flashbang;+lever&quot;</P>
-<P STYLE="margin-bottom: 0in">	bind &quot;p&quot; &quot;buy
-smokegrenade;+lever&quot;</P>
-<P STYLE="margin-bottom: 0in">	bind &quot;-&quot; &quot;buy
-awp;+lever&quot;</P>
-<P STYLE="margin-bottom: 0in">	bind &quot;,&quot; &quot;buy
-ak47;+lever&quot;</P>
-<P STYLE="margin-bottom: 0in">	bind &quot;.&quot; &quot;buy
-deagle;+lever&quot;</P>
-<P STYLE="margin-bottom: 0in">	bind &quot;n&quot; &quot;buy
-bizon;+lever&quot;</P>
-<P STYLE="margin-bottom: 0in">	bind &quot;m&quot; &quot;buy
-mp7;+lever&quot;</P>
-<P STYLE="margin-bottom: 0in">	bind &quot;v&quot; &quot;buy
-vesthelm;+lever&quot;</P>
-<P STYLE="margin-bottom: 0in">	bind &quot;u&quot; &quot;buy
-defuser;+lever&quot;</P>
-<P STYLE="margin-bottom: 0in">	bind &quot;b&quot; &quot;buy
-vest;+lever&quot;</P>
-<P STYLE="margin-bottom: 0in">	bind &quot;SEMICOLON&quot; &quot;buy
-molotov;+lever&quot;</P>
-<P STYLE="margin-bottom: 0in">	bind &quot;'&quot; &quot;buy
-mp9;+lever&quot;</P>
-<P STYLE="margin-bottom: 0in">	bind &quot;\&quot; &quot;buy
-negev;+lever&quot;</P>
-<P STYLE="margin-bottom: 0in"><BR>
-</P>
-<P STYLE="margin-bottom: 0in">joystick 0</P>
-<P STYLE="margin-bottom: 0in">mm_dedicated_search_maxping 200</P>
-<P STYLE="margin-bottom: 0in">cl_autowepswitch 0</P>
-<P STYLE="margin-bottom: 0in">fps_max 0</P>
-<P STYLE="margin-bottom: 0in">host_writeconfig</P>
-</BODY>
-</HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>autoexec.cfg</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+	</style>
+</head>
+<body>
+<p>
+	//CLEAR<br>
+	&emsp;unbindall<br>
+	<br>
+	//MOUSE<br>
+	<br>
+	&emsp;sensitivity "1.5"<br>
+	<br>
+	&emsp;bind "MOUSE1" "+attack"<br>
+	&emsp;bind "MOUSE2" "+attack2"<br>
+	<br>
+	&emsp;bind mwheeldown "+jump"<br>
+	&emsp;bind mwheelup "+jump"<br>
+	<br>
+	&emsp;m_rawinput "1"<br>
+	&emsp;m_mousespeed "0"<br>
+	&emsp;m_customaccel "0"<br>
+	<br>
+	&emsp;bind "k" "say_team"<br>
+	&emsp;voice_loopback 0<br>
+	<br>
+	//KEYBOARD<br>
+	<br>
+	&emsp;//DIRECTIONAL<br>
+	<br>
+	&emsp;&emsp;bind "w" "+forward"<br>
+	&emsp;&emsp;bind "s" "+back"<br>
+	&emsp;&emsp;bind "a" "+moveleft"<br>
+	&emsp;&emsp;bind "d" "+moveright"<br>
+	&emsp;&emsp;bind "shift" "+duck;"<br>
+	&emsp;&emsp;bind "ctrl" "+speed"<br>
+	<br>
+	&emsp;//INTERACT/SELECT<br>
+	<br>
+	&emsp;&emsp;bind "r" "+reload"<br>
+	&emsp;&emsp;bind "e" "+use"<br>
+	&emsp;&emsp;bind "g" "drop"<br>
+	&emsp;&emsp;bind "q" "lastinv"<br>
+	&emsp;&emsp;bind "1" "slot1"<br>
+	&emsp;&emsp;bind "2" "slot2"<br>
+	&emsp;&emsp;bind "3" "slot3"<br>
+	&emsp;&emsp;bind "4" "slot4"<br>
+	&emsp;&emsp;bind "5" "slot5"<br>
+	&emsp;&emsp;bind "t" "+lookatweapon"<br>
+	&emsp;&emsp;bind "x" "slot12"<br>
+	&emsp;&emsp;bind "h" "player_ping"<br>
+	&emsp;&emsp;bind "F3" "autobuy"<br>
+	&emsp;&emsp;bind "z" "+spray_menu"<br>
+	&emsp;&emsp;bind "=" "toggleconsole"<br>
+	<br>
+	//VIEWMODEL<br>
+	<br>
+	&emsp;viewmodel_offset_x 2<br>
+	&emsp;viewmodel_offset_y 5<br>
+	&emsp;viewmodel_offset_z -3<br>
+	&emsp;viewmodel_fov 68<br>
+	&emsp;cl_righthand 1<br>
+	&emsp;cl_bobcycle 1<br>
+	&emsp;cl_bobamt_vert 0<br>
+	&emsp;cl_bob_lower_amt 0<br>
+	&emsp;cl_bobamt_lat 0<br>
+	&emsp;cl_showfps 1<br>
+	<br>
+	//CROSSHAIR<br>
+	<br>
+	&emsp;cl_crosshairalpha "255"<br>
+	&emsp;cl_crosshaircolor "5"<br>
+	&emsp;cl_crosshaircolor_b "255"<br>
+	&emsp;cl_crosshaircolor_r "222"<br>
+	&emsp;cl_crosshaircolor_g "74"<br>
+	&emsp;cl_crosshairdot "0"<br>
+	&emsp;cl_crosshairgap "-1"<br>
+	&emsp;cl_crosshairsize "2"<br>
+	&emsp;cl_crosshairstyle "4"<br>
+	&emsp;cl_crosshairusealpha "1"<br>
+	&emsp;cl_crosshairthickness "2"<br>
+	&emsp;cl_fixedcrosshairgap "-1"<br>
+	&emsp;cl_crosshair_outlinethickness "0"<br>
+	&emsp;cl_crosshair_drawoutline "0"<br>
+	<br>
+	//HUD<br>
+	<br>
+	&emsp;cl_use_opens_buy_menu 0<br>
+	&emsp;cl_showloadout 1<br>
+	&emsp;cl_hud_radar_scale "0.9"<br>
+	&emsp;cl_radar_scale "0.4"<br>
+	&emsp;cl_radar_always_centered "0"<br>
+	<br>
+	//ALIASES<br>
+	<br>
+	&emsp;/HELPFUL<br>
+	<br>
+	&emsp;&emsp;//EASY DISCONNECT<br>
+	&emsp;&emsp;&emsp;alias dc  "disconnect"<br>
+	<br>
+	&emsp;&emsp;//DISCONNECT TYPO<br>
+	&emsp;&emsp;&emsp;alias cd  "disconnect"<br>
+	<br>
+	&emsp;//SCOREGRAPH<br>
+	&emsp;&emsp;bind "tab" "+_scoregraph;+graphSound"<br>
+	<br>
+	&emsp;&emsp;alias "+_scoregraph" "+showscores; net_graphheight 0;"<br>
+	&emsp;&emsp;alias "-_scoregraph" "-showscores; net_graphheight 2000;"<br>
+	&emsp;&emsp;alias "+graphSound" "playvol buttons/combine_button7 .7"<br>
+	<br>
+	&emsp;&emsp;bind x "use weapon_healthshot"<br>
+	<br>
+	//SOUND<br>
+	<br>
+	&emsp;snd_mvp_volume .4<br>
+	<br>
+	&emsp;//VOICE<br>
+	<br>
+	&emsp;&emsp;volume ".7"<br>
+	&emsp;&emsp;voice_scale ".6"<br>
+	&emsp;&emsp;voice_enable "1"<br>
+	<br>
+	&emsp;snd_tensecondwarning_volume "0.5"<br>
+	&emsp;snd_menumusic_volume "0"<br>
+	&emsp;snd_roundend_volume "0.5"<br>
+	&emsp;snd_roundstart_volume "0"<br>
+	&emsp;snd_deathcamera_volume "0"<br>
+	&emsp;snd_mapobjective_volume "0"<br>
+	&emsp;snd_roundstart_volume 0<br>
+	&emsp;snd_roundend_volume 0<br>
+	&emsp;snd_deathcamera_volume 0<br>
+	<br>
+	//BUY<br>
+	<br>
+	&emsp;bind "space" "buymenu;"<br>
+	&emsp;bind "i" "buy hegrenade;"<br>
+	&emsp;bind "o" "buy flashbang;"<br>
+	&emsp;bind "p" "buy molotov;"<br>
+	&emsp;bind "-" "buy awp;"<br>
+	&emsp;bind "," "buy ak47;"<br>
+	&emsp;bind "." "buy deagle;"<br>
+	&emsp;bind "n" "buy famas;"<br>
+	&emsp;bind "m" "buy mp7;"<br>
+	&emsp;bind "v" "buy vesthelm;"<br>
+	&emsp;bind "u" "buy defuser;"<br>
+	&emsp;bind "b" "buy vest;"<br>
+	&emsp;bind "SEMICOLON" "buy smokegrenade;"<br>
+	&emsp;bind "'" "buy mp9;"<br>
+	&emsp;bind "\" "buy negev;"<br>
+	<br>
+	joystick 0<br>
+	mm_dedicated_search_maxping 200<br>
+	cl_autowepswitch 0<br>
+	fps_max 0<br>
+	host_writeconfig
+</p>
+<hr>
+<a href="https://johannesolzem.gq/autoexec/autoexec.cfg" download>Download</a>
+</body>
+</html>
