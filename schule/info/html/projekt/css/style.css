@@ -1,1 +1,127 @@
-a
+body {
+  font-size: 80%;
+  font-family: 'Share Tech Mono', Monospace, Courier;
+  text-align: center;
+  background-color: #202020;
+}
+
+#wrap {
+	width: 760px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#navigation {
+	float: right;
+	width: 55px;
+	height: 803px;
+	border-bottom: 1px solid #999;
+	border-top: 1px solid #999;
+	font-size: 25px;
+	text-align: right;
+	font-family: 'Share Tech Mono', Monospace, Courier;
+	color: white;
+}
+
+#navigation ul {
+	list-style-type: none;
+}
+
+#navigation ul li {
+	display: inline;
+}
+
+#header {
+	float: left;
+	width: 760px;
+	height: 90px;
+	background-image: header.png;
+	text-align: middle;
+	border-top: 1px solid #999;
+}
+
+#content {
+	float: left;
+	height: 400px;
+	width: 559px;
+	border-right: 1px solid #999;
+}
+
+#content ul {
+	list-style-type: circle;
+}
+
+#content ul li {
+	display: inline;
+}
+
+#content ol {
+	color: teal;
+}
+
+#content ul li {
+	display: inline;
+}
+
+#sidebar {
+	float: left;
+	height: 350px;
+	width: 100px;
+	top: 0;
+	font-size: 90%;
+}
+
+#footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: light-gray;
+	color: white;
+	text-align: center;
+}
+
+/*the . before the word means i am defining a class and not an ID. When using an ID a # is used*/
+.price {
+	font-size: 15px;
+	font-weight: bold;
+	font-family: Verdana, Geneva, sans-serif;
+	color: teal;
+}
+
+.specs ul {
+	list-style-type: disc;
+}
+
+.dotted {
+	border: 5px dotted #555;
+}
+
+/*This defines the Table*/
+table, th, td {
+	border: 2px solid teal;
+	border-collapse: collapse;
+	color: white;
+}
+
+h2, h3, h4, h5, h6 {
+	margin: 20px;
+	color: white;
+}
+
+/*I wanted heading1 to be teal so i seperated it from h2-h6*/
+h1 {
+	color: teal;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+p {
+	margin: 20px 25px;
+	color: white;
+}
+
+/*This defines the hyperlinks*/
+a {
+	color: teal;
+	
+}
