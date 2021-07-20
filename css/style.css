@@ -47,7 +47,7 @@ body {
 }
 
 .slider-text1 {
-    animation: slide1 6s cubic-bezier(0.82, 0.01, 0.23, 1.01) infinite;
+    animation: slide1 7s cubic-bezier(0.82, 0.01, 0.23, 1.01) infinite;
 }
 
 @keyframes slide1 {
